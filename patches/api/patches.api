@@ -1,3 +1,19 @@
+public final class app/revanced/patches/bahamut/bannerAd/HideBannerAdPatchKt {
+	public static final fun getHideBannerAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/bahamut/fullscreenAd/HideFullscreenAdPatchKt {
+	public static final fun getFullscreenAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/bahamut/googleAd/BlockAdPatchKt {
+	public static final fun getHideAdsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/bahamut/nativeAd/HideNativeAdPatchKt {
+	public static final fun getHideNativeAdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
 public final class app/revanced/patches/example/ExamplePatchKt {
 	public static final fun getExamplePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
