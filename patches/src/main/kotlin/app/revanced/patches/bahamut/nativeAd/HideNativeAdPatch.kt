@@ -11,10 +11,16 @@ val hideNativeAdPatch = bytecodePatch(
     compatibleWith("tw.com.gamer.android.activecenter")
 
     execute {
-        AbsTopicAdapterCtorFingerprint.method.addInstructions(
-            AbsTopicAdapterCtorFingerprint.patternMatch!!.startIndex,
+        absTopicAdapterCtorFingerprint.method.addInstructions(
+            absTopicAdapterCtorFingerprint.patternMatch!!.startIndex,
             """
             const/4 p5, 0x0
+            """,
+        )
+        baseFeedFragmentListFingerprint.method.addInstructions(
+            baseFeedFragmentListFingerprint.patternMatch!!.startIndex + 1,
+            """
+            const/4 v10, 0x0
             """,
         )
     }
